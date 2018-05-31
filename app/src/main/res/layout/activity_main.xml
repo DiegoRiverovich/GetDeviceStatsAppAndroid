@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/backgroundColor"
+    android:padding="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.niceattiregames.andrey.getdevicestatsapp.MainActivity">
+
+    <TextView
+        android:textColor="@color/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device statistics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".25"
+            android:layout_width="0dip"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Device model:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="OS version:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="IMEI:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Screen Resolution:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Screen DPI:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="GPS Coordinates:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Network connection type:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="WiFi SSID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="WiFi BSSID:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="left|center"
+                android:layout_weight="1"
+                android:text="Current time:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".60"
+            android:layout_width="0dip"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="GetStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        -->
+
+<LinearLayout
+    android:id="@+id/invisibleLayout"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="Device model:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/deviceModel"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="OS version:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/OSVersion"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="IMEI:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/IMEI"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="Screen Resolution:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/screenResolution"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".70"
+            android:gravity="left"
+            android:paddingLeft="8dp"
+            android:text="Second"
+            android:textColor="@color/textColor" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="Screen DPI:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/screenDPI"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="GPS Coordinates:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/GPSCoordinates"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="Network connection type:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/networkConnectionType"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="WiFi SSID:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/WiFiSSID"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="WiFi BSSID:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/WiFiBSSID"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/textColor"
+            android:gravity="left"
+            android:layout_weight=".30"
+            android:text="Current time:"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/currentTime"
+            android:textColor="@color/textColor"
+            android:paddingLeft="8dp"
+            android:gravity="left"
+            android:layout_weight=".70"
+            android:text="Second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <Button
+        android:onClick="pushButton"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonsettings"
+        android:text="GetStats"
+        android:textColor="@color/textColor" />
+
+
+
+</LinearLayout>
